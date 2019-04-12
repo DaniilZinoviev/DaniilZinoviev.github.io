@@ -1,10 +1,11 @@
+/* Import other CSS-styles */
 @import url('../css/fonts.css');
 
 /* Global Settings */
 
 * {
     box-sizing: border-box;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-out;
 }
 
 h1,
@@ -31,6 +32,7 @@ a {
 body {
     margin: 0;
     padding: 0;
+    color: rgb(49, 49, 49);
     font: 16px/1.2 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -49,8 +51,13 @@ header {
 }
 
 header .logo {
-    font-family: cursive;
+    font-family: 'Kaushan Script';
+    font-size: 1.4em;
     font-style: italic;
+}
+header .logo h1:hover {
+    transform: translateY(-10px);
+    cursor: default;
 }
 
 header .about {
@@ -76,6 +83,7 @@ header .about .first-char {
 
 .works-header .title {
     font-size: 24px;
+    min-width: 170px;
     color: rgb(83, 83, 83);
 }
 
@@ -93,6 +101,7 @@ header .about .first-char {
 .filter li {
     float: left;
     margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 .filter li a{
@@ -126,6 +135,10 @@ header .about .first-char {
 .works .item {
     transition: opacity 0.3s ease;
     opacity: 1;
+}
+
+.works .item img {
+    
 }
 
 .works .item .view{
@@ -218,7 +231,8 @@ footer {
 }
 
 footer .copyright {
-    font-size: 14px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer .social i{

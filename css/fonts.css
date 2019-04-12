@@ -25,3 +25,8 @@
     font-style: normal;
     font-weight: 600;
 }
+
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('../fonts/Kaushan_Script/KaushanScript-Regular.ttf') format('truetype');
+}
