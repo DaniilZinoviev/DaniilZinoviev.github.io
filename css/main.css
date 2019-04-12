@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300');
+
+/* Global Settings */
+
+* {
+    box-sizing: border-box;
+    transition: all 0.4s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.separator {
+    height: 10px;
+    width: 100%;
+    background: url('../img/pattern-1.png') repeat;
+    margin: 30px 0 20px 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 16px/1.2 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 93vw;
+    max-width: 960px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-family: cursive;
+    font-style: italic;
+}
+
+header .about {
+    width: 50%;
+}
+
+header .about .first-char {
+    float: left;
+    font-size: 33px;
+    line-height: 33px;
+    padding: 3px 6px 0 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Main blocks */
+/* Header of main */
+
+.works-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.works-header .title {
+    font-size: 24px;
+    color: rgb(83, 83, 83);
+}
+
+.works-header .title h3{
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.works-header .filter {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.filter li {
+    float: left;
+    margin-left: 10px;
+}
+
+.filter li a{
+    display: inline-block;
+    padding: 3px 8px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: #e3e3e3;
+    color: #666;
+}
+
+.filter li a:hover {
+    color: #fff;
+    background-color: #666;
+}
+
+.filter li.current a {
+    background-color: rgb(255, 238, 0);
+    color: #000;
+}
+
+/* Main Section Body */
+.works {
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Every Item */
+.works .item {
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+.works .item .view{
+    width: 94%;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    background: #fff url('../img/bgimg.jpg') repeat center center ;
+}
+.works .item .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px 15px;
+    text-align: center;
+    background-color: rgba(216, 216, 216, 0.7);
+    opacity: 0;
+    height: 160px;
+}
+
+.works .item .mask a {
+    display: inline-block;
+    padding: 5px 7px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Times, 'Times New Roman', serif;
+    background-color: #212121;
+    transition: all 0.2s ease;
+}
+
+.works .item .mask a:hover {
+    background-color: rgb(250, 232, 70);
+    color: #444;
+}
+
+.works .item .mask p {
+    margin: 0;
+    margin-bottom: 15px;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.works .item .view:hover p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.works .item .view:hover .mask{
+    opacity: 1;
+}
+
+.works .item img {
+    max-width: 100%;
+    height: auto;
+}
+.works .item .description {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.works .item .description a{
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.works .item .description .tags i{
+    margin-right: 2%;
+}
+
+/* Add Vertical lines */
+.works .item .tags span::after {
+    content: ' | ';
+}
+
+.works .item .tags span:last-child::after {
+    content: '';
+}
+
+/* Footer */
+footer {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .copyright {
+    font-size: 14px;
+}
+
+footer .social i{
+    font-size: 1.7em;
+    color: #666;
+}
+footer .social i:hover{
+    transition: none;
+    color: rgb(255, 238, 0);
+}
