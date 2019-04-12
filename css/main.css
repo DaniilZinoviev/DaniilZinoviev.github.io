@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300');
+@import url('../css/fonts.css');
 
 /* Global Settings */
 
@@ -99,6 +99,7 @@ header .about .first-char {
     display: inline-block;
     padding: 3px 8px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
     background-color: #e3e3e3;
     color: #666;
 }
@@ -185,7 +186,7 @@ header .about .first-char {
 }
 .works .item .description {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 16px;
 }
 
