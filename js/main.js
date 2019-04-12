@@ -8,8 +8,10 @@ filterList.addEventListener('click', (e) => filterItems(e));
 function filterItems(e) {
     e.preventDefault();
     // Add current class
-    filterList.querySelector('.current').classList.remove('current');
-    e.target.parentElement.classList.add('current');
+    if (filterList.querySelector('.current') && e.target.tagName == 'A') {
+        filterList.querySelector('.current').classList.remove('current');
+        e.target.parentElement.classList.add('current');
+    }
 
     // Current Tag
     let necessaryTag = e.target.textContent;
