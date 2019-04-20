@@ -1,0 +1,3 @@
+[submodule "demos/Simple-chat-room"]
+	path = demos/Simple-chat-room
+	url = https://github.com/DaniilZinovyev/Simple-chat-room
