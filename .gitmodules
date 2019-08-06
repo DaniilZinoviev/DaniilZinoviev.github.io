@@ -1,3 +1,6 @@
 [submodule "demos/Simple-chat-room"]
 	path = demos/Simple-chat-room
 	url = https://github.com/DaniilZinovyev/Simple-chat-room
+[submodule "demos/Drag-n-Drop"]
+	path = demos/Drag-n-Drop
+	url = https://github.com/DaniilZinovyev/Drag-n-Drop.git
