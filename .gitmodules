@@ -4,3 +4,18 @@
 [submodule "demos/Drag-n-Drop"]
 	path = demos/Drag-n-Drop
 	url = https://github.com/DaniilZinovyev/Drag-n-Drop.git
+[submodule "demos/--force"]
+	path = demos/--force
+	url = https://github.com/DaniilZinovyev/Simple-chat-room.git
+[submodule "demos/Slider"]
+	path = demos/Slider
+	url = https://github.com/DaniilZinovyev/Slider.git
+[submodule "demos/Speed-Typing-Game"]
+	path = demos/Speed-Typing-Game
+	url = https://github.com/DaniilZinovyev/Speed-Typing-Game.git
+[submodule "demos/Stopwatch"]
+	path = demos/Stopwatch
+	url = https://github.com/DaniilZinovyev/Stopwatch.git
+[submodule "demos/Sortie"]
+	path = demos/Sortie
+	url = https://github.com/DaniilZinovyev/Sortie.git
