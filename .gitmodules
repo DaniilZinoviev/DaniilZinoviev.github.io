@@ -19,3 +19,6 @@
 [submodule "demos/Sortie"]
 	path = demos/Sortie
 	url = https://github.com/DaniilZinovyev/Sortie.git
+[submodule "demos/--name"]
+	path = demos/--name
+	url = https://github.com/DaniilZinovyev/Simple-chat-room.git
