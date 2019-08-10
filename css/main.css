@@ -125,6 +125,7 @@ header .about .first-char {
 
 /* Main Section Body */
 .works {
+    min-height: 120px;
     margin-top: 20px;
     display: grid;
     grid-gap: 20px;
@@ -191,10 +192,11 @@ header .about .first-char {
 }
 
 .works .item img {
+    display: block;
     max-width: 100%;
-    height: 210px;
 }
 .works .item .description {
+    padding: 10px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -239,4 +241,10 @@ footer .social i{
 footer .social i:hover{
     transition: none;
     color: rgb(255, 238, 0);
+}
+
+footer .phone {
+    font-size: 18px;
+    font-family: 'Kaushan Script';
+    color: #000;
 }
