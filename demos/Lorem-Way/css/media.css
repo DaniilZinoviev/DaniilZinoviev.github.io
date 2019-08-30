@@ -1,0 +1,417 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .container {
+        width: 960px;
+    }
+    header nav > ul li > a {
+        padding: 8px 10px;
+        text-transform: none;
+    }
+    
+    .commentary blockquote {
+        width: 260px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .container {
+        width: 700px;
+    }
+    
+    /*  Section 'home'  */
+    .home form {
+        display: none;
+    }
+    .home .btn-form {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    /*  section 'Service'  */
+    .blocks_container {
+        grid-gap: 50px 40px;
+    }
+    
+    .about .right-part {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .pricing {
+        padding-bottom: 100px;
+        padding-top: 80px;
+    }
+    .plans {
+        display: block;
+        text-align: center;
+    }
+    .plan {
+        display: inline-block;
+        padding: 30px 40px;
+        height: 370px;
+        margin: 10px;
+    }
+    .plan p {
+        margin: 10px 0;
+    }
+    .plan .price + span,
+    .plan.active .price + span {
+        margin-bottom: 15px;
+    }
+    .plan.active{
+        flex: 10;
+        height: 370px;
+        background-color: #709dca;
+        border: 1px solid #ccd5df;
+    }
+    .plan.active h3{
+        margin: 0;
+    }
+    .plan .price {
+        font-size: 50px;
+        margin-bottom: 2px;
+    }
+    
+    .how_it_work {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+    .steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px 0;
+    }
+    .step:nth-child(even)::after {
+        display: none;
+    }
+    .step:nth-child(odd)::after {
+        right: -33%;
+    }
+    .step i {
+        margin-bottom: 20px;
+    }
+    
+    .commentary {
+        padding: 25px 20px 20px 20px;
+    }
+    .commentary img {
+        float: none;
+        margin-bottom: 15px;
+    }
+    
+    .happy_clients {
+        padding-bottom: 100px;
+        padding-top: 80px;
+    }
+    
+    #subscribe button,
+    #subscribe input {
+        margin-bottom: 20px;
+    }
+    
+    footer nav ul li a {
+        padding: 8px 10px;
+    }
+    footer .phone {
+        margin-top: 30px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+    
+    .container {
+        width: 80%;
+    }
+    .menu-btn-wrap {
+        display: table;
+    }
+    .top-line {
+        position: relative;
+    }
+    
+    header nav {
+        visibility: hidden;
+        position: absolute;
+        line-height: 1;
+        opacity: 0;
+        right: 0;
+        top: 70px;
+        z-index: 5;
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    header nav ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #c7c7c7;
+    }
+    header nav ul li {
+        margin: 0;
+        padding: 0;
+        line-height: 25px;
+        width: 12em;
+        font-size: 16px;
+        text-align: left;
+        background-color: #fff;
+        border-bottom: 1px solid #ededed;
+    }
+    header nav ul li a {
+        display: block;
+        font-size: inherit;
+        padding-left: 15px;
+        border-radius: 0;
+    }
+    
+    header nav.show {
+        visibility: visible;
+        opacity: 1;
+        max-height: 296px;
+    }
+    
+    .home {
+        padding-bottom: 100px;
+    }
+    .home h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .home p {
+        font-size: 14px;
+    }    
+    .home .slider_wrap {
+        display: none;
+    }
+    
+    .service {
+        padding-top: 100px;
+    }
+    .service .block {
+        display: block;
+    }
+    .block .icon {
+        float: left;
+        margin: 0 15px 10px 0;
+    }
+    .icon-education:before {
+        padding-right: 10px;
+    }
+    .block h3 {
+        font-size: 14px;
+    }
+    
+    .about .right-part {
+        padding: 50px 30px;
+    }
+    .about .right-part p {
+        line-height: 18px;
+    }
+    
+    .pricing .container > p {
+        margin: 10px;
+        margin-bottom: 0;
+    }
+    
+    .steps {
+        margin-top: 30px;
+        grid-gap: 10px 0;
+    }
+    .step p {
+        line-height: 20px;
+    }
+    .step::after {
+        display: none!important;
+    }
+    
+    .commentaries {
+        display: block;
+        min-height: 350px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    .commentaries .arrows {
+        display: block;
+    }
+    .arrow-left,
+    .arrow-right{
+        display: inline-block;
+        position: absolute;
+        background: url("../img/slider_arrows.png") no-repeat;
+        width: 16px;
+        height: 29px;
+        left: 0;
+        top: 40%;
+        cursor: pointer;
+    }
+    .arrow-right {
+        left: auto;
+        right: 0;
+        background-position: 100% 0;
+    }
+    .commentary {
+        position: absolute;
+        left: 50%;
+        opacity: 0;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 340px;
+    }
+    .commentary img {
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .commentary blockquote {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .commentary.active {
+        opacity: 1;
+    }
+    
+    #subscribe > label {
+        display: none;
+    }
+    
+    footer nav {
+        display: none;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    
+    .service {
+        padding-bottom: 80px;
+    }
+    .service .blocks_container {
+        grid-template-columns: 1fr;
+        grid-gap: 20px 0;
+    }
+    .service .block {
+        display: flex;
+        flex-direction: column;
+    }
+    .block h3 {
+        text-align: center;
+    }
+    .icon-education:before {
+        padding-right: 0;
+    }
+    .block .icon {
+        float: none;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+    
+    .about .left-part {
+        display: none;
+    }
+    
+    .plan {
+        height: auto!important;
+    }
+    
+    .steps {
+        grid-template-columns: 1fr;
+        grid-gap: 20px 0;
+    }
+    .step {
+        padding-top: 0;
+    }
+    .how_it_work button {
+        margin-top: 50px;
+    }
+    
+    .commentaries {
+        min-height: 450px;
+    }
+    .commentary {
+        width: 75%;
+    }
+    .commentary img {
+        width: 100px;
+    }
+    .commentary blockquote {
+        width: 90%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .contact_us {
+        padding-bottom: 140px;
+    }
+    .address {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 769px) {
+    .commentary {
+        transform: translateX(0)!important;
+    }
+}
+
+/* SPECIAL for 'commentaries slider' */
+@media only screen and (min-width : 769px) {
+    .commentary {}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
