@@ -32,11 +32,12 @@ window.onload = function () {
     $(".tabs").waypoint(function() {
         $(".tab").each(function(index) {
             setTimeout(() => {
-                this.classList.add("animated", "fadeInRight")
+                $(this).animated("fadeInRight")
+                // this.classList.add("animated", "fadeInRight")
             }, index * 100);
         });
     }, {
-        offset: "100%"
+        offset: "20%"
     });
     
     $(".section-head h2, .section-head p").animated("fadeInRight");

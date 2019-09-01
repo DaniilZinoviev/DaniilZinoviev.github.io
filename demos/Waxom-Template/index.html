@@ -7,37 +7,40 @@
     <title>Waxom homepage</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <!--  Libs  -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/fonts/iconFont/css/icon-pack.css">
-    <link rel="stylesheet" href="libs/animate/animate.css">
+    <link rel="stylesheet" href="libs/normalize.min.css">
+
+    <!-- Fast page structure loading (put here min.css of updated structure)-->
+    <style>*{box-sizing:border-box;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s}.container{width:1160px;margin:0 auto}.grid{display:grid}.flex{display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex}.flex__space-around{justify-content:space-around}.flex__space-between{justify-content:space-between}@media only screen and (max-width : 1200px){.container{width:960px}}@media only screen and (max-width : 992px){.container{width:700px}}@media only screen and (max-width : 768px){.container{width:80%}}</style>
     
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/media.css">
+    <!-- Fast header (_header.min.css put here) -->
+    <style>ul{list-style-type:none;margin:0;padding:0}a{text-decoration:none;color:#fff}body{margin:0 auto;max-width:1925px;line-height:1.5;font-size:14px;font-family:'Montserrat-Regular';overflow-x:hidden}.section-head p{animation-delay:.3s}.menu-btn-wrap{display:table;height:100%;padding:10px 0;text-align:center;display:none}.menu-btn{display:table-cell;vertical-align:middle;cursor:pointer;padding:10px;transition:all .5s ease-out}.menu-btn .btn-line{width:28px;height:3px;margin:0 0 5px;background:#fff;transition:all .5s ease-out}.menu-btn.close{transform:rotate(180deg)}.menu-btn.close .btn-line:nth-child(1){transform:rotate(45deg) translate(5px,5px)}.menu-btn.close .btn-line:nth-child(2){opacity:0}.menu-btn.close .btn-line:nth-child(3){transform:rotate(-45deg) translate(7px,-6px)}header{padding-top:40px;height:968px;background:url(./img/bg_1.jpg) center top no-repeat;-webkit-background-size:cover;background-size:cover}.top-row{position:relative;justify-content:space-between;height:75px}.logo{width:190px;height:74px;display:block}.logo h1{display:inline-block;color:#fff;font-family:'Raleway-Regular';font-weight:400;font-size:34px;margin-top:12px}.logo > img{width:65px;height:auto;float:left}.nav{height:75px;line-height:75px;text-align:right}.nav li{float:left}.nav a{padding:10px 15px}.nav > .active > a{color:#c7b299}.icon{width:20px;margin:12px 18px;height:26px;margin-top:13px;text-align:center;font-size:21px;color:#fff;cursor:pointer}.icon-search i:hover{color:#eee}.icon:hover{color:#c7b299}.icon-cart{width:20px;margin:12px 18px}.slogan{text-align:center;color:#fff;max-width:595px;margin:0 auto;margin-top:250px;font-size:16px;font-family:"Montserrat-Light"}.slogan h3{font-size:36px;font-family:'Raleway-Medium';font-weight:400}.slogan h2{margin:-32px 0 10px;font-size:52px;font-family:'Raleway-ExtraBold'}.slogan p{margin-bottom:25px}.slogan .button{-webkit-transition:all .1s;-o-transition:all .1s;transition:all .1s}.button{background-color:#998675;text-transform:uppercase;display:inline-block;border:none;text-decoration:none;color:#fff;padding:15px 50px;font-family:'Raleway-ExtraBold';font-size:14px;-webkit-border-radius:2px;border-radius:2px;text-align:center;position:relative;outline:0;cursor:pointer;-webkit-transition:all .2s ease;-o-transition:all .2s ease;transition:all .2s ease}.button::after{content:'';display:block;position:absolute;bottom:0;width:100%;left:0;background-color:#736357;height:4px}.button:focus,.button:hover{text-decoration:none}.button:hover{background-color:#736357}.button:hover::after{background-color:#65564b}.button:active{transform:translateY(4px);background-color:#5f5248;padding-bottom:11px}.button:active::after{background-color:#5f5248}</style>
+    
+    <link rel="stylesheet" href="libs/animate/animate.min.css">
+    <link rel="stylesheet" href="fonts/iconFont/css/icon-pack.min.css">
+    <link rel="stylesheet" href="compiled.min.css">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="top_row">
-                <div class="logo">
-                    <img src="assets/img/logo.png" alt="Logo.jpg">
+            <div class="top-row flex">
+                <div class="logo animated fadeInLeft">
+                    <img src="img/logo.png" alt="Logo.jpg">
                     <h1>Waxom</h1>
                 </div>
-                <ul class="nav">
+                <ul class="nav animated fadeInRight">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
-                    <!--<li><a href="#">Portfolio</a></li>-->
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Pricing</a></li>
-                    <!--<li><a href="#">Shortcodes</a></li>-->
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <div class="menu-btn-wrap">
+                <div class="menu-btn-wrap animated fadeInRight">
                     <div class="menu-btn">
                         <div class="btn-line"></div>
                         <div class="btn-line"></div>
@@ -45,25 +48,22 @@
                     </div>
                 </div>
             </div>
-            <div class="slogan">
-                <h2>Unique and Modern Design</h2>
-                <h1>Portfolio PSD Template</h1>
+            <div class="slogan animated fadeInUp">
+                <h3>Unique and Modern Design</h3>
+                <h2>Portfolio PSD Template</h2>
                 <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imper diet doming id quod mazimя placerat facer possim assum. </p>
                 <button class="button" id="getStarted">get started</button>
             </div>
 
         </div>
     </header>
-
-
-
-    <section class="tabs container tabs">
-
+    
+    <section class="tabs container flex">
         <div class="tab">
             <div class="icon-wrap">
                 <div class="icon icon-pencil"></div>
             </div>
-            <h2>Web & App Design</h2>
+            <h2>Web &amp; App Design</h2>
             <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
         </div>
 
@@ -91,20 +91,19 @@
             <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
         </div>
     </section>
-
-
+    
     <section class="browsers">
         <div class="container">
             <div class="section-head">
                 <h2>Waxom is Realization of your Ideas.</h2>
             <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
             </div>
-            <img src="assets/img/browsers.png" alt="Background image">
+            <img src=" img/browsers.png" alt="Background image">
         </div>
     </section>
 
     <section class="purchase" id="purchase">
-        <div class="container">
+        <div class="container flex flex__space-between">
             <div>
                 <h2><span>Waxom</span> Multipurpose WordPress Theme</h2>
                 <p>Don't Forget to Rate the Template. Thanks so much!</p>
@@ -119,7 +118,7 @@
                 <h2>Our Latest Projects.</h2>
             <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
             </div>
-            <div class="buttons_set">
+            <div class="buttons-set">
                 <button class="active">All</button>
                 <button>Web Design</button>
                 <button>Mobile App</button>
@@ -129,7 +128,7 @@
             <div class="projects_set">
 
                 <div class="project_item image_bg_1">
-                    <img src="assets/img/proj_1.jpg" alt="">
+                    <img src=" img/proj_1.jpg" alt="">
                     <div class="project_image">
                         <a href="" class="block_chain">
                             <i class="icon-chain"></i>
@@ -145,7 +144,7 @@
                 </div>
 
                 <div class="project_item image_bg_2">
-                    <img src="assets/img/proj_2.jpg" alt="">
+                    <img src=" img/proj_2.jpg" alt="">
                     <div class="project_image">
                         <a href="" class="block_chain">
                             <i class="icon-chain"></i>
@@ -161,7 +160,7 @@
                 </div>
                 
                 <div class="project_item image_bg_3">
-                    <img src="assets/img/proj_3.jpg" alt="">
+                    <img src=" img/proj_3.jpg" alt="">
                     <div class="project_image">
                         <a href="" class="block_chain">
                             <i class="icon-chain"></i>
@@ -177,7 +176,7 @@
                 </div>
                 
                 <div class="project_item image_bg_4">
-                    <img src="assets/img/proj_4.jpg" alt="">
+                    <img src=" img/proj_4.jpg" alt="">
                     <div class="project_image">
                         <a href="" class="block_chain">
                             <i class="icon-chain"></i>
@@ -193,7 +192,7 @@
                 </div>
                 
                 <div class="project_item image_bg_5">
-                    <img src="assets/img/proj_5.jpg" alt="">
+                    <img src=" img/proj_5.jpg" alt="">
                     <div class="project_image">
                         <a href="" class="block_chain">
                             <i class="icon-chain"></i>
@@ -208,7 +207,7 @@
                     </div>
                 </div>
                 <div class="project_item image_bg_6">
-                    <img src="assets/img/proj_6.jpg" alt="">
+                    <img src=" img/proj_6.jpg" alt="">
                     <div class="project_image">
                         <a href="" class="block_chain">
                             <i class="icon-chain"></i>
@@ -240,8 +239,8 @@
     </section>
 
     <section class="mobile">
-        <div class="container clearfix">
-            <img src="assets/img/phoneInHand.png" alt="">
+        <div class="container flex">
+            <img src="img/phoneInHand.png" alt="">
             <div class="text section-head">
                 <h2>Excellent for Mobile Devices.</h2>
                 <p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
@@ -256,7 +255,7 @@
     </section>
 
     <section class="numbers">
-        <div class="container">
+        <div class="container flex flex__space-around">
             <div class="statistic_item">
                 <div class="icon icon_people"></div>
                 <span>3587</span>
@@ -285,12 +284,12 @@
         </div>
     </section>
 
-    <section class="container recent">
+    <section class="recent container">
         <div class="section-head">
             <h2>Recent Posts.</h2>
         <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
         </div>
-        <div class="posts">
+        <div class="posts flex flex__space-around">
             <div class="post_item">
                 <div class="calendar">
                     <div class="day">30</div>
@@ -298,7 +297,7 @@
                 </div>
                 <div class="img-wrap">
                     <div class="blackout"></div>
-                    <img src="./assets/img/recent_img_1.jpg" alt="">
+                    <img src="img/recent_img_1.jpg" alt="">
                 </div>
                 <h3>Lorem ipsum dolor sit amet</h3>
                 <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
@@ -313,7 +312,7 @@
                 <div class="img-wrap">
 
                     <div class="blackout"></div>
-                    <img src="./assets/img/recent_img_2.jpg" alt="">
+                    <img src="img/recent_img_2.jpg" alt="">
                 </div>
                 <h3>Lorem ipsum dolor sit amet</h3>
                 <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
@@ -326,7 +325,7 @@
                 </div>
                 <div class="img-wrap">
                     <div class="blackout"></div>
-                    <img src="./assets/img/recent_img_3.jpg" alt="">
+                    <img src="img/recent_img_3.jpg" alt="">
 
                 </div>
                 <h3>Lorem ipsum dolor sit amet</h3>
@@ -334,14 +333,14 @@
                 <a href="">Read More</a>
             </div>
         </div>
-        <div class="buttons_set">
-            <div class="icon  icon-arrow-left"></div>
-            <div class="icon  icon-arrow-right"></div>
+        <div class="buttons-set">
+            <div class="icon icon-arrow-left"></div>
+            <div class="icon icon-arrow-right"></div>
         </div>
     </section>
 
     <section class="brands">
-        <div class="container flex">
+        <div class="container flex flex__space-around">
             <div class="brand_item"></div>
             <div class="brand_item"></div>
             <div class="brand_item"></div>
@@ -351,10 +350,10 @@
 
     <footer>
         <div class="top_part">
-            <div class="container top_part_wrap">
+            <div class="container top_part_wrap flex flex__space-around">
                 <div class="footer-about">
                     <div class="logo">
-                        <img src="assets/img/logo.png" alt="Logo.jpg">
+                        <img src=" img/logo.png" alt="Logo.jpg">
                         <h1>Waxom</h1>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
@@ -397,7 +396,7 @@
             </div>
         </div>
         <div class="bottom_part">
-            <div class="container flex bottom_part_wrap">
+            <div class="container bottom_part_wrap flex flex__space-between">
                 <ul class="left">
                     <li>Copyright © 2015 <b>Waxom</b></li>
                     <li>Privacy Policy</li>
@@ -421,7 +420,7 @@
     <script src="libs/waypoints/waypoints.min.js"></script>
     <script src="libs/animate/animate-css.js"></script>
 
-    <script src="assets/js/main.js"></script>
+    <script src=" js/main.js"></script>
 </body>
 
 </html>
