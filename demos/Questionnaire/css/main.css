@@ -1,3 +1,6 @@
+body {
+	background: url("../background1.png");
+}
 .questionnaire {
     margin: 0 auto;
     font-size: 18px;
@@ -13,7 +16,9 @@
 
 .btn {
     display: block;
-    margin: 5px auto;
+	font-size: 16px;
+	padding: 5px 10px;
+    margin: 7px auto;
 }
 
 .btn-reload {
