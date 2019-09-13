@@ -67,7 +67,6 @@ $(document).ready(function(){
     $("footer").waypoint(function() {
         $("footer .content > div").each(function(index) {
             setTimeout(() => {
-                console.log(this)
                 this.classList.add("animated", "fadeInRight");
             }, 150 * index);
         });
