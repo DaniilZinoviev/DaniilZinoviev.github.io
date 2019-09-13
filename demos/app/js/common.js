@@ -45,7 +45,7 @@ $(document).ready(function(){
 
                 // Custom animation (change this to spec class)
                 setTimeout(function() {
-                    header.style.backgroundImage = `url(../img/header-bg-${i + 1}.jpg)`;
+                    header.style.backgroundImage = `url(img/header-bg-${i + 1}.jpg)`;
                     header.style.opacity = 1;
                 }, 300)
             }
